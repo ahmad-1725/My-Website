@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://kit.fontawesome.com/7d2db35620.js" crossorigin="anonymous"></script>
+  <title>Porfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      Ahmad Ilyas
+    </div>
+    <nav class="navbar">
+      <div class="nav-items">
+          <a class="item" href="#">Home</a>
+          <a class="item" href="#about">About</a>
+          <a class="item" href="#skills">Skills</a>
+          <a class="item" href="">Projects</a>
+          <a class="item" href="#">Contacts</a>
+      </div>
+      <div class="sideMenu">
+        <div class="menu-btn" onclick="menu()">&#9776</div>
+        <div class="menu">
+          <li class="menu-item"><a href="Home">Home</a></li>
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#skills">Skills</a></li>
+          <li class="menu-item"><a href="#">Projects</a></li>
+          <li class="menu-item"><a href="#">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="text-wrapper">
+      <p id="hello">Hello<span>,</span></p>
+      <h3 id="name">I'm Ahmad Ilyas</h3>
+      <p id="dev">And I'm a <span class="text"></span></p>
+      <div class="btn-wrapper">
+        <a id="projects-btn" href="">View Projects</a>
+        <a id="contacts-btn" href="">Contacts</a>
+      </div>
+    </div>
+    <div class="img-wrapper">
+      <img src="Profile-Pic.png" alt="picture.png">
+    </div>
+  </section>
+
+  <section class="about-me-section autoShow">
+
+    <div class="title-style" id="about-title">
+      About Me
+    </div>
+
+    <div class="about-me-wrapper fadeUp">
+      <div class="some-container">
+        <div class="something1">IT Student</div>
+        <div class="something2">Web Developer</div>
+      </div>
+
+      <div class="about-me-text">
+        <p>
+          Currently studying Computer Science at Punjab University Lahore, I specialize in Web Development, AI engineering, and visual design — turning ideas into real, functional digital experiences. With a passion for creating intuitive interfaces and intelligent systems, I bring technical expertise and creative vision to every project.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <div class="tools autoShow">
+    <div class="skill-item">HTML</div>
+    <div class="skill-item">CSS</div>
+    <div class="skill-item">JavaScript</div>
+    <div class="skill-item">Tailwind</div>
+    <div class="skill-item">PHP</div>
+    <div class="skill-item">React</div>
+    <div class="skill-item">Python</div>
+    <div class="skill-item">Github</div>
+  </div>
+
+  <section class="skills-section " id="skills">
+    <div class="title-style autoShow" id="skills-title">My <span>Skills</span></div>
+
+    <div class="container1 fadeUp" id="technical-skills">
+      <h1 class="heading1">Technical Skills</h1>
+
+      <div class="technical-bars">
+        <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: #137bbc;" class="fa-brands fa-css3-alt"></i>
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: #b0bc10;" class="fa-brands fa-js"></i>
+          <div class="info">
+            <span>JavaScript</span>
+          </div>
+          <div class="progress-line javascript">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: #69bcbc;" class="fa-brands fa-react"></i>
+          <div class="info">
+            <span>React</span>
+          </div>
+          <div class="progress-line react">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: #8892BF;" class="fa-brands fa-php"></i>
+          <div class="info">
+            <span>PHP</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: #c32ec9;" class="fa-brands fa-python"></i>
+          <div class="info">
+            <span>Python</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container1 fadeUp" id="professional-skills">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+          <div class="radial-bar">
+
+            <svg x="0px" y="0px" viewBox ="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="radial-bar">
+
+            <svg x="0px" y="0px" viewBox ="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bar">
+
+            <svg x="0px" y="0px" viewBox ="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="radial-bar">
+
+            <svg x="0px" y="0px" viewBox ="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Teamwork</div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <section class="projects-section">
+    <div class="title-style autoShow id="projects-title">Projects</div>
+    <div class="container2 fadeUp">
+      <div class="project">
+        <div class="img-container">
+          <img src="currency-converter1.png" alt="project-banner" class="project-banner">
+        </div>
+        <h3 class="project-title">Currency Converter</h3>
+        <p class="project-description">A simple web app that converts currencies using real-time exchange rates from an API, built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/ahmad-1725/Currency-Converter" class="project-link" target="_blank">Github Repo</a>
+      </div>
+      <div class="project">
+        <div class="img-container">
+          <img src="foodhot.png" alt="project-banner" class="project-banner">
+        </div>
+        <h3 class="project-title">Food Order Website</h3>
+        <p class="project-description">A dynamic food ordering platform built with PHP, JavaScript, HTML, and CSS. It uses MySQL (via phpMyAdmin) for managing menu items, orders, and cart.</p>
+        <a href="https://github.com/ahmad-1725/food-ordering-website" class="project-link" target="_blank">Github Repo</a>
+      </div>
+      <div class="project">
+        <div class="img-container">
+          <img src="Portfolio.png" alt="project-banner" class="project-banner">
+        </div>
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-description">A personal portfolio built with HTML, CSS, and JavaScript to showcase projects, skills, and contact information in a clean, responsive design.</p>
+        <a href="https://github.com/ahmad-1725/Portfolio" class="project-link" target="_blank">Github Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts-section autoShow" >
+    <div class="title-style" id="contacts-title">My Contacts</div>
+
+    <div class="container3" id="socials">
+      <!-- Social Media Links -->
+      <div id="social-links">
+        <a href="https://github.com/ahmad-1725" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmadd-ilyas/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:ahmadd.ilyas25@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+
+      <!-- Contact Form -->
+    <form id="contact-form-element" action="https://formsubmit.co/f83c66e912fbe0a3be1d1a180cc7b128" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+  
+    </div>
+
+    <!-- <div class="container3" id="contact-form">
+
+    </div> -->
+  </section>
+
+
+
+  <script src="main.js"></script>
+</body>
+<script>
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.header');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+  function menu(){
+    const sideMenu = document.querySelector('.sideMenu');
+    const menuBtn = document.querySelector('.menu-btn');
+    sideMenu.classList.toggle('open');
+
+    menuBtn.classList.toggle('clicked');
+  }
+  document.addEventListener('click', (e)=>{
+    const sideMenu = document.querySelector('.sideMenu');
+    const isMenu = sideMenu.contains(e.target);
+    const isButton = e.target.closest('button')
+    if (!isMenu && !isButton && sideMenu.classList.contains('open')) {
+    sideMenu.classList.remove('open');
+  }
+  });
+</script>
+</html>
